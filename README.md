@@ -14,14 +14,15 @@ int Estoque
 
 string Categoria
 
-**Armazenamento temporário na mémoria:**
+#### **Armazenamento temporário na mémoria:**
+
 Os produtos são armazenados temporariamente em Data → ProdutoData
 
 List<Produto> produtos
 
 Junto de métodos Getter/Setters e Remove
 
-**Requisições HTTP:**
+#### **Requisições HTTP:**
 - Listar todos os registros.
     
 - Buscar registro específico pelo ID.
