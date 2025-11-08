@@ -10,5 +10,6 @@ app.MapGetRoutes();
 //POST
 
 //DELETE{Id}
+app.MapDeleteRoutes();
 
 app.Run();
