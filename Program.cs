@@ -8,7 +8,9 @@ var app = builder.Build();
 app.MapGetRoutes();
 
 //POST
+app.MapPostRoutes();
 
 //DELETE{Id}
+app.MapDeleteRoutes();
 
 app.Run();
