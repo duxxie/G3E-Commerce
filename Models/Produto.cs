@@ -16,6 +16,6 @@ namespace G3ECommerce.Models
             Preco = preco;
             Estoque = estoque;
             Categoria = categoria;
-        }        
+        }
     }
 }
