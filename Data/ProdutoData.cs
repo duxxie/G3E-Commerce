@@ -3,7 +3,7 @@ namespace G3ECommerce.Data
 {
     public static class ProdutoData
     {
-        public static List<Produto> produtos = new()
+        public static List<Produto> produtos { get; set; } = new()
         {
             new Produto( "Smartphone Orion X", "Tela 6.5\" OLED, 128 GB, 5G, câmera 50 MP", 2499.90m, 35, "Smartphones"),
             new Produto( "Notebook Vega 14", "Intel i5, 16 GB RAM, SSD 512 GB, 14\" FHD", 4299.00m, 18, "Notebooks"),

@@ -4,7 +4,7 @@
 
 ## Passo a passo lógico:
 
-Precisamos
+**O código deve:**
 - Listar todos os registros.
     
 - Buscar registro específico pelo ID.
@@ -20,7 +20,10 @@ Precisamos
 **Rota get{id}:** /api/produtos/id
 
 ##### **ROTA_POST(Adicionar novos registros):**
-
+**Rota post:** /api/produtos
 
 ##### **ROTA_DELETE(Excluir registros):**
 **Rota Delete:** /api/produtos/id
+
+## Justificativas que permitam a compreensão do método adotado.
+API miníma para gerenciar produtos com praticidade.
