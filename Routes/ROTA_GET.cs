@@ -1,3 +1,4 @@
+using G3ECommerce.Data;
 using G3ECommerce.Models;
 namespace G3ECommerce.Routes
 {
@@ -7,12 +8,12 @@ namespace G3ECommerce.Routes
         {
             // Rota padrão: /
             app.MapGet("/", () => "Api de Vendas e Pedidos funcionando!!!\n ROTA_GET FUNCIONANDO!");
-            // Rota get: /api/produtos
-            app.MapGet("/api/produtos", () => Produto.produtos);
-            // Rota get id: /api/produtos/id
-            app.MapGet("/api/produtos/{id}", (int id) =>
+            // Rota get: api/produtos
+            app.MapGet("/api/produtos", () => ProdutoData.GetProdutos());
+            // Rota get id: api/produtos/id
+            app.MapGet("/api/produtos/{id}", (string id) =>
             {
-                var produto = Produto.produtos.FirstOrDefault(r => r.Id == id);
+                var produto = ProdutoData.GetProdutoPorId(id);
                 return produto != null ? Results.Ok(produto) : Results.NotFound("Produto Inexistente.");
             });
         }
