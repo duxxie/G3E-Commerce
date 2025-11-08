@@ -4,13 +4,11 @@ namespace Biblioteca.Models
     {
         public int Id { get; set; }
         public string Titulo { get; set; }
-        public string Autor { get; set; }
 
-        public Livro(int id, string titulo, string autor)
+        public Livro(int id, string titulo)
         {
             Id = id;
             Titulo = titulo;
-            Autor = autor;
         }
         
         public Livro() { }

@@ -10,19 +10,20 @@ var clientes = new List<Cliente>
     new Cliente ( 2,"João Silva")
 };
 
-var livros = new List<Livro>
+var produto = new List<Livro>
 {
-    new Livro ( 1, "Clean Code", "Robert C. Martin"),
-    new Livro ( 2, "Domain-Driven Design", "Eric Evans")
+    new Livro ( 1, "Clean Code"),
+    new Livro ( 2, "Domain-Driven Design")
 };
 
 var pedidos = new List<Pedido>
 {
-    new Pedido { Id = 1, ClienteId = 1, LivrosIds = new List<int>{ 1, 2 }, Data = DateTime.Now.AddDays(-2) },
-    new Pedido { Id = 2, ClienteId = 2, LivrosIds = new List<int>{ 2 }, Data = DateTime.Now.AddDays(-1) }
+    new Pedido { Id = 1, ClienteId = 1, ProdutoIds = new List<int>{ 1, 2 }, Data = DateTime.Now.AddDays(-2) },
+    new Pedido { Id = 2, ClienteId = 2, ProdutoIds = new List<int>{ 2 }, Data = DateTime.Now.AddDays(-1) }
 };
 
-app.MapGet("/", () => livros);
+app.MapGet("/produto", () => produto);
+
 
 app.MapGet("/cliente", () => clientes);
 
@@ -32,7 +33,7 @@ app.MapGet("/pedidos", () =>
     {
         p.Id,
         Cliente = clientes.FirstOrDefault(c => c.Id == p.ClienteId),
-        Livros = livros.Where(l => p.LivrosIds.Contains(l.Id)).ToList(),
+        Produto = produto.Where(l => p.ProdutoIds.Contains(l.Id)).ToList(),
         p.Data
     });
 
