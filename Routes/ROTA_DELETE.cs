@@ -15,7 +15,6 @@ namespace G3ECommerce.Routes
 
                 ProdutoData.RemoverProduto(produto);
                 return Results.NoContent();
-
             });
         }
     }
