@@ -1,8 +1,8 @@
 # API de vendas e Pedidos
 
-## Vendas e Pedidos
+### Vendas e Pedidos
 
-### Passo a passo lógico:
+## Passo a passo lógico:
 
 Precisamos
 - Listar todos os registros.
@@ -13,7 +13,7 @@ Precisamos
     
 - Excluir registros.
 
-###As estruturas e comandos utilizados:
+## As estruturas e comandos utilizados:
 ##### **ROTA_GET(Listar todos os registros, Buscar registro específico pelo ID):**
 **Rota padrão:** /
 **Rota get:** /api/produtos
