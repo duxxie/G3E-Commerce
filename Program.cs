@@ -1,5 +1,5 @@
 using System.Reflection.Metadata.Ecma335;
-using Biblioteca.Models;
+using G3ECommerce.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
@@ -11,4 +11,8 @@ var produto = new List<Produto>
 };
 
 app.MapGet("/produto", () => produto);
+
+//GET{Id}
+//POST
+//DELETE{Id}
 app.Run();

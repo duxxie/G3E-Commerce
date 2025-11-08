@@ -1,4 +1,4 @@
-namespace Biblioteca.Models
+namespace G3ECommerce.Models
 {
     public class Produto
     {
@@ -9,8 +9,6 @@ namespace Biblioteca.Models
         {
             Id = id;
             Titulo = titulo;
-        }
-        
-        public Produto() { }
+        }        
     }
 }
