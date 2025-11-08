@@ -1,4 +1,5 @@
-namespace G3ECommerce.Models
+using G3ECommerce.Models;
+namespace G3ECommerce.Routes
 {
-    
+
 }
